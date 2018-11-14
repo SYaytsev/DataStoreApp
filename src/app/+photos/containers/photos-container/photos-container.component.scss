@@ -1,6 +1,6 @@
 :host{
   display: block;
-  height: 100%;
+  height: calc(100% - 140px)
 }
 .photos-toolbar{
   display: flex;
