@@ -1,0 +1,19 @@
+<div class="photos-toolbar">
+  <div>
+    upload toolbar
+  </div>
+  <div>
+    <button type='button'
+            *ngFor="let type of sortTypes"
+            class="btn-sort"
+            [ngClass]="{ 'btn-sort-active': type === currentSortType }"
+            (click)="onSort(type)"> {{type}}
+    </button>
+  </div>
+</div>
+<div class="photos-wrapper">
+  <div class="photos-views-container">
+    <app-photo-details *ngFor="let item of photos | sortPhoto:currentSortType:isDesc" [photo]="item"></app-photo-details>
+  </div>
+</div>
+

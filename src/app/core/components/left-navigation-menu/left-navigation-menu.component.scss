@@ -1,0 +1,35 @@
+:host{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  background-color: #454b61;
+}
+.site-logo{
+  margin: 10px auto;
+  height: 60px;
+}
+.left-nav{
+  a{
+    display: block;
+    padding-left: 30px;
+    color: #7e7e7e;;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    &:before{
+      content: '';
+      width: 50px;
+      height: 50px;
+      background-color: #454b61;
+    }
+  }
+  .active{
+    color: #d3d3d3;
+  }
+}
+.size-data{
+  margin-top: 100px;
+  color: #ffffff;
+}

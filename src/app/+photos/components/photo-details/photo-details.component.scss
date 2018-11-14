@@ -1,0 +1,35 @@
+:host{
+  flex-grow: 1;
+  flex-basis: 200px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.photo-details{
+  &-container{
+    width: 200px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+.image-wrapper{
+  width: 100%;
+  height: 150px;
+  img{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.photo{
+  &-name {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &-size{
+    margin-top: 5px;
+  }
+}

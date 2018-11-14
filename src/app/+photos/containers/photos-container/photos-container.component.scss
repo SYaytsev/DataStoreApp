@@ -1,0 +1,44 @@
+:host{
+  display: block;
+  height: 100%;
+}
+.photos-toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+  color: #555555;
+  .btn-sort{
+    display: inline-block;
+    margin-left: 15px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: #e7e7e7;
+    color: #555555;
+    &-active{
+      background-color: #555555;
+      color: #ffffff;
+    }
+  }
+}
+.photos-wrapper{
+  height: 100%;
+  overflow: hidden;
+}
+
+.photos-views-container{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+
+  margin-top: 30px;
+  height: 100%;
+  overflow: auto;
+}

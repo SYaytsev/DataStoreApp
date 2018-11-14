@@ -1,0 +1,12 @@
+<div class="site-logo"></div>
+<nav class="left-nav">
+  <a routerLink="files" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Files</a>
+  <a routerLink="photos" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Photos</a>
+  <a routerLink="sharing" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Sharing</a>
+  <a routerLink="links" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Links</a>
+  <a routerLink="events" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Events</a>
+  <a routerLink="get-started" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Get Started</a>
+</nav>
+<div class="size-data" *ngIf="isSizeBarShown">
+  <app-size-bar [usedSize]="localStoreService.getTotalPhotosSize()" [totalSize]="localStoreService.getTotalSize()"></app-size-bar>
+</div>
